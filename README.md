@@ -1,46 +1,51 @@
 # Instagram-page-posts-scrapper
 
 
-Get Instagram posts/profile/hashtag data without using Instagram API. 
-This crawler could fail due to updates on instagram’s website. If you encounter any problems, please contact me.
+# Linkedin People Seach Scrapper
+LinkedIn scrapper is advanced search result scrapper to find all people of different profile in excel sheet
 
-Install
-Make sure you have Chrome browser installed.
-Download chromedriver and put it into bin folder: ../chromedriver
-Install Selenium: pip install -r requirements.txt
-cp inscrawler/secret.py.dist inscrawler/secret.py
-Crawler
-Usage
-positional arguments:
-  mode
-    options: [posts, posts_full, profile, hashtag]
+# Installation:
 
-optional arguments:
-  -n NUMBER, --number NUMBER
-                        number of returned posts
-  -u USERNAME, --username USERNAME
-                        instagram's username
-  -t TAG, --tag TAG     instagram's tag name
-  -o OUTPUT, --output OUTPUT
-                        output file name(json format)
+## 1. Python
+ You can install python 3 from https://www.python.org
 
-  --debug               see how the program automates the browser
+## 2. Selenium
 
-  --fetch_comments      fetch comments
-  # Turning on the flag might take forever to fetch data if there are too many commnets.
+You can install selenium using Python Package manager.
 
-  --fetch_likes_plays   fetch like/play number
+command: pip istall selenium
 
-  --fetch_likers        fetch all likers
-  # Instagram might have rate limit for fetching likers. Turning on the flag might take forever to fetch data if there are too many likes.
 
-  --fetch_mentions      fetch users who are mentioned in the caption/comments (startwith @)
+## 3. Chrome Webdriver
 
-  --fetch_hashtags      fetch hashtags in the caption/comments (startwith #)
+You can install webdriver for chrome browser for selenium from here : https://chromedriver.chromium.org/downloads
+
+Note: Check your Chrome version before download
+
+
+## 4. BeautifulSoup
+
+You can install BeautifulSoup using Python Package manager.
+
+command: pip istall beautifulsoup4
+
+
+## 5. Xlsxwriter
+
+You can install Xlsxwriter to generate Excel file using Python Package manager.
+
+command: pip istall Xlsxwriter
 
 
 
+# USE:
 
+### step 1 : Install all the above modules
 
+### step 2: Downloads this project as linkedin-scrapper-master
 
-Usage
+### step 3: Unzip this file and run this project
+
+### Step 4 : Change the username and password in instagram-scrapping.py file. 
+
+### step 5 : Run the script and enjoy. Now you got your Instagram people search data in excel sheet which readable in and converted in all format. 
